@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.logo {
+  max-width: 10rem;
+  padding-left: 2rem;
+}
+
+.nav {
+  //   background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.nav-items-div {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  padding-right: 2rem;
+}
+
+.header {
+  background-color: white;
+}
+
+.main {
+  // display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(46, 46, 46);
+  height: 100vh;
+
+  &__title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+  }
+
+  &__quote {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgb(226, 225, 225);
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  &.correct {
+    background-color: green; // Turn green if correct
+    color: white;
+  }
+
+  &.wrong {
+    background-color: red; // Turn red if incorrect
+    color: white;
+  }
+}
+
+button:hover {
+  border-color: white;
+}
+
+.skip-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.skip-button {
+  background-color: rgb(66, 70, 66);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-disabled {
+  background-color: rgb(226, 225, 225);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.bg-img {
+  width: 50rem;
+  align-self: center;
+}
+
+.img-person {
+  margin-top: 2rem;
+  max-width: 50rem;
+  aspect-ratio: auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
